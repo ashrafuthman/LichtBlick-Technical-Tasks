@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { Photo } from '../types';
+import { Photo } from '../Tasks/TaskB/types';
 
 
 export const useFetchPhotos = () => {

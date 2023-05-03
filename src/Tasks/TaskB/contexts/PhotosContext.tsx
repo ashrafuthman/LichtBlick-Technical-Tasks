@@ -1,5 +1,5 @@
 import React, { createContext, ReactNode } from 'react';
-import { useFetchPhotos } from '../hooks/useFetchPhotos';
+import { useFetchPhotos } from '../../../hooks/useFetchPhotos';
 import { Photo } from '../types';
 
 

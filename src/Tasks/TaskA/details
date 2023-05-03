@@ -1,0 +1,24 @@
+1. Create a `PhotosList` component that renders a photos list and adjusts its colors to a theme provided by React.Context. There are two contexts available: `PhotosContext` and `ThemeContext`.
+
+   In the provided `PhotosList` component code, you can see that both contexts are imported and their values are accessed using the `useContext` hook:
+
+
+2. The `PhotosList` component should be a `div` with the `photos-list-container` ID. The `photos-list-container` should have a white background for the light theme and a black background for the dark theme.
+
+   In the code, the `containerStyle` object is created based on the current `theme`, and the style is applied to the `div` with the `photos-list-container` ID:
+
+
+3. Render an unordered list (`<ul>`) of photos (`<li>`). The `ul` should have the `photos-list` ID.
+
+   In the code, a `ul` element with the `photos-list` ID is created, and the photos are mapped to create list items:
+
+
+4. Each photo (`<li>`) should have a title (`<h3>`) and an `img` element with the image source from the `imgSrc` field of the photo. The title text color should be black for the light theme and white for the dark theme.
+
+   In the code, the `titleStyle` object is created based on the current `theme`, and the style is applied to the `h3` element. The `img` element's source is set to `photo.imgSrc`:
+
+
+5. Below the `PhotosList`, place a button (`<button>`) that calls the `fetchPhotos` method from the `PhotosContext`. The button should have the `fetch-photos` ID.
+
+   In the code, a button element with the `fetch-photos` ID is created and has an `onClick` handler that calls the `fetchPhotos` method:
+
